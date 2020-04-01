@@ -14,7 +14,7 @@ class sox {
 		unless	=> 'which sox && sox --help-format mp3|grep "Format: mp3"',
 		path	=> '/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin',
 		require => [
-			Package['kernel-devel'],
+			#Package['kernel-devel'],
 			Exec['install_lame']
 		]
 	}
